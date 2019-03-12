@@ -84,7 +84,7 @@ class PemainController extends Controller
       $pemain_tidak_terpilih = Pemain::whereNotIn('id',$pemain);
 
       if($request->has('gender')){
-        $pemain_tidak_terpilih->where('gender',$request->gender;
+        $pemain_tidak_terpilih->where('gender',$request->gender);
       }
 
       foreach ($pemain_tidak_terpilih->get() as $key => $value) {
