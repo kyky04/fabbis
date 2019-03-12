@@ -1,0 +1,35 @@
+<header id="header" class="app-header navbar frontend" role="menu">
+  <div class="pos-rlt navbar-collapse box-shadow bg-gradient full-headbar">
+    <div class="nav navbar-nav navbar-md">
+      <a href="#/" class="navbar-brand text-lt">
+        <img src="{{ asset('img/logo_pln.png') }}">
+        <span class="hidden-folded m-l-xs text-logo">PLN APD RIAU</span>
+      </a>
+    </div>
+    <ul class="nav navbar-nav hidden-sm navbar-md m-l-xs">
+      <li class="dropdown">
+        <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+          <i class="fa fa-fw fa-plus visible-xs-inline-block"></i>
+          <span translate="header.navbar.new.NEW">Visi Misi</span> <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#" translate="header.navbar.new.PROJECT">Projects</a></li>
+          <li>
+            <a href="">
+              <span class="badge bg-info pull-right">5</span>
+              <span translate="header.navbar.new.TASK">Task</span>
+            </a>
+          </li>
+          <li><a href="" translate="header.navbar.new.USER">User</a></li>
+          <li class="divider"></li>
+          <li>
+            <a href="">
+              <span class="badge bg-danger pull-right">4</span>
+              <span translate="header.navbar.new.EMAIL">Email</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</header>
