@@ -56,6 +56,7 @@ class PemainController extends Controller
       $item->posisi = $request->posisi;
       $item->gender = $request->gender;
       $item->status = '0';
+      $item->terpilih = '0';
 
       if($request->hasFile('foto')){
          $path = $request->file('foto')->store('uploads/user', 'public');
@@ -81,7 +82,7 @@ class PemainController extends Controller
       }
 
       $pemain_tidak_terpilih = Pemain::whereNotIn('id',$pemain);
-      
+
       if($request->has('gender')){
         $pemain_tidak_terpilih->where('gender',$request->gender;
       }
